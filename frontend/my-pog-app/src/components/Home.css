@@ -1,0 +1,48 @@
+
+/* src/components/Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.ticker-marquee {
+  animation: marquee 20s linear infinite;
+  color: #ff6090; /* Set text color to a pink shade */
+  font-family: 'Poppins', sans-serif; /* Use Google Font for a dynamic font */
+  font-size: 1.5rem; /* Increase font size for better visibility */
+  text-align: center; /* Center-align text */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Make the container full height of the viewport */
+  background-color: #fde3ee; /* Set background color to a light pink */
+}
+
+.home-content {
+  font-family: 'Poppins', sans-serif; /* Use the same font for content */
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  color: #333; /* Set text color to a dark gray */
+  margin-bottom: 20px;
+}
+
+.button-logout {
+  background-color: #ff6090; /* Set button background color to the same pink shade */
+  color: white; /* Set button text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* Use the same font for buttons */
+  font-weight: 500; /* Increase font weight for emphasis */
+  transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.button-logout:hover {
+  background-color: #ff3860; /* Darken button background color on hover */
+}

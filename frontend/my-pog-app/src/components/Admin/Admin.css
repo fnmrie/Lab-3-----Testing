@@ -1,0 +1,60 @@
+
+/* Admin.css */
+
+.admin-page {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .slogan {
+    font-size: 24px;
+    color: #ff338b; /* Vibrant and dynamic color */
+  }
+  
+  .create-pog-form {
+    margin-top: 20px;
+  }
+  
+  .create-pog-form input,
+  .create-pog-form select,
+  .create-pog-form button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .create-pog-form button {
+    background-color: #7d1666; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .create-pog-form button:hover {
+    background-color: #f529e4;
+  }
+  
+  .pog-cards {
+    margin-top: 20px;
+  }
+  
+  .pog-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .pog-card button {
+    background-color: #008CBA; /* Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pog-card button:hover {
+    background-color: #005f79;
+  }
+  

@@ -1,0 +1,55 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int        @id @default(autoincrement())
+  name      String
+  email     String     @unique
+  password  String
+  role      String     @default("USER")
+  wallet    Float      @default(1000)
+  pogs      Pog[]      @relation("UserPogs")
+  createdAt DateTime   @default(now())
+
+  // Add a relation to transactions for tracking user transactions
+  transactions Transaction[]
+}
+
+model Transaction {
+  id        Int        @id @default(autoincrement())
+  type      String
+  userId    Int
+  pogId     Int
+  price     Int
+  createdAt DateTime   @default(now())
+
+  // Define the user and pog relationships
+  user      User       @relation(fields: [userId], references: [id])
+  pog       Pog        @relation(fields: [pogId], references: [id])
+}
+
+model Pog {
+  id             Int      @id @default(autoincrement())
+  name           String   @unique
+  ticker_symbol  String   @unique
+  price          Int
+  color          String
+  users          User[]   @relation("UserPogs")
+
+  // Add the opposite relation field for transactions
+  transactions   Transaction[]
+}
+
+// Model for admins
+model Admin {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String
+  role      String   @default("ADMIN") // Default role for admins
+}

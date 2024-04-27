@@ -1,0 +1,31 @@
+
+/* src/components/MyPogs.css */
+/* MyPogs.css */
+.shop-container {
+    margin: 20px;
+  }
+  
+  .pogs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .pogs-table th,
+  .pogs-table td {
+    border: 1px solid #0a0208;
+    padding: 8px;
+  }
+  
+  .pogs-table th {
+    background-color: #f5acdc;
+    text-align: left;
+  }
+  
+  .pogs-table td {
+    text-align: center;
+  }
+  
+  .pogs-table tbody tr:hover {
+    background-color: #fec1e7;
+  }
+  

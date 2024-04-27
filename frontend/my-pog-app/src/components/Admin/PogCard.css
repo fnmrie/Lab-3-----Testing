@@ -1,0 +1,38 @@
+
+.pog-card {
+    background-color: #ff69b4; /* Vibrant pink background */
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  
+    /* Animation for hover effect */
+    transition: transform 0.3s ease;
+  }
+  
+  .pog-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .pog-card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .pog-card p {
+    margin-bottom: 5px;
+  }
+  
+  .pog-card button {
+    background-color: #fff;
+    color: #ff69b4; /* Vibrant pink text color */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pog-card button:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+  }
+  
